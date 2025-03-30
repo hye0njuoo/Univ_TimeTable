@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-public struct Class {
-    public let courseId  : String
+public struct Lecture {
+    public let classroomID  : String
     public let name: String
     public let classroom  : String
     public let professor : String
@@ -19,8 +19,8 @@ public struct Class {
     public let textColor      : UIColor?
     public let backgroundColor: UIColor
 
-    public init(courseId: String, name: String, classroom: String, professor: String, courseDay: Day,startTime: String, endTime: String, backgroundColor: UIColor) {
-        self.courseId        = courseId
+    public init(classroomID: String, name: String, classroom: String, professor: String, courseDay: Day,startTime: String, endTime: String, backgroundColor: UIColor) {
+        self.classroomID        = classroomID
         self.name            = name
         self.classroom       = classroom
         self.professor       = professor
