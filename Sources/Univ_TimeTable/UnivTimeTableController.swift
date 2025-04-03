@@ -43,9 +43,7 @@ extension UnivTimeTableController: UICollectionViewDataSource {
             maxEndTimeHour += 1
         }
 
-        // The number of rows in timetable
         let courseCount = maxEndTimeHour - minStartTimeHour + 1
-        // 7 = 6 + 1
         return (courseCount + 1) * (elliotable.daySymbols.count + 1)
     }
 
